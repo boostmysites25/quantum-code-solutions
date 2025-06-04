@@ -73,7 +73,7 @@ const ContactForm = ({ isGrid }) => {
       <div className="absolute top-0 w-full h-full bg-gradient-to-b from-background via-background/60 to-background"></div>
       <div className="wrapper relative z-10 w-full">
         <div className="">
-          <div className={isGrid ? "grid grid-cols-2 gap-10 text-start" : "text-center"}>
+          <div className={isGrid ? "grid sm:grid-cols-2 gap-10 text-start" : "text-center"}>
             <div
               className={`flex flex-col ${
                 isGrid ? "items-start" : "items-center"
