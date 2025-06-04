@@ -2,6 +2,8 @@ import React, { lazy } from "react";
 import { Mail, MapPin, Phone } from "lucide-react";
 import { companyDetails } from "../constant";
 import { Link } from "react-router-dom";
+import SEO from "../components/SEO";
+import { seoData } from "../seoData";
 const WebsiteHeader = lazy(() => import("../components/website/WebsiteHeader"));
 const PageBanner = lazy(() => import("../components/website/PageBanner"));
 const WebsiteFooter = lazy(() => import("../components/website/WebsiteFooter"));
@@ -12,11 +14,12 @@ const LeadForm = lazy(() => import("../components/LeadForm"));
 const ContactUs = () => {
   return (
     <>
+      <SEO {...seoData.contact} />
       <WebsiteHeader />
       <PageBanner title="Contact Us" />
       <div className="pt-[3rem]">
         <div className="wrapper">
-          <div className="grid sm:grid-cols-3 gap-5 max-w-3xl mx-auto mb-[3rem]">
+          <div className="grid sm:grid-cols-3 gap-5 max-w-4xl mx-auto mb-[3rem]">
             <div
               data-aos="fade-up"
               className="bg-primary/5 flex flex-col gap-3 text-primary items-center justify-center rounded-xl p-5"

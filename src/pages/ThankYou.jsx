@@ -10,11 +10,14 @@ import {
   Phone,
   Twitter,
 } from "lucide-react";
+import SEO from "../components/SEO";
+import { seoData } from "../seoData";
 
 const ThankYou = () => {
   const links = routes.filter((option) => option.path !== "/blogs/:id");
   return (
     <>
+      <SEO {...seoData.thankYou} />
       <div className="h-[calc(100vh-10rem)] flex flex-col items-center justify-center bg-secondary/5">
         <div className="py-4 sticky top-0 w-full bg-secondary/60 backdrop-blur-md z-50 text-primary_text">
           <div className="wrapper flex justify-between items-center gap-10">

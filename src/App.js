@@ -15,6 +15,7 @@ import { LoadingSpinner } from "./components/LoadingSpinner";
 import ScrollToTop from "./components/ScrollToTop";
 import WhatsAppIcon from "./components/WhatsAppIcon";
 import { Toaster } from "react-hot-toast";
+import { HelmetProvider } from "react-helmet-async";
 const LandingPage = lazy(() => import("./pages/LandingPage"));
 const ThankYou = lazy(() => import("./pages/ThankYou"));
 
@@ -28,22 +29,23 @@ AOS.init({
 
 function App() {
   return (
-    <Suspense fallback={<LoadingSpinner />}>
-      <SpinnerContextProvider>
-        <Router>
-          <LoadingSpinnerContext />
-          <WhatsAppIcon />
-          <ScrollToTop />
-          <Toaster
-            position="top-bottom"
-            toastOptions={{
-              style: {
-                background: "#010C2A",
-                color: "#ffffff",
-              },
-            }}
-          />
-          <Routes>
+    <HelmetProvider>
+      <Suspense fallback={<LoadingSpinner />}>
+        <SpinnerContextProvider>
+          <Router>
+            <LoadingSpinnerContext />
+            <WhatsAppIcon />
+            <ScrollToTop />
+            <Toaster
+              position="top-bottom"
+              toastOptions={{
+                style: {
+                  background: "#010C2A",
+                  color: "#ffffff",
+                },
+              }}
+            />
+            <Routes>
             {/* Website pages */}
             {routes.map((route) => (
               <Route path={route.path} element={route.element} />
@@ -61,10 +63,11 @@ function App() {
               path="/app-development"
               element={<LandingPage page={"app-development"} />}
             />
-          </Routes>
-        </Router>
-      </SpinnerContextProvider>
-    </Suspense>
+            </Routes>
+          </Router>
+        </SpinnerContextProvider>
+      </Suspense>
+    </HelmetProvider>
   );
 }
 

@@ -36,8 +36,8 @@ const ServiceDetails = lazy(() => import("./pages/ServiceDetails"));
 export { logoImg };
 
 export const companyDetails = {
-  phone: "+0000000000",
-  address: "ABC Street, City, Country",
+  phone: "+919998038952",
+  address: "B-70 Gopalnagar Society, Nr president college,  Kalol - 382721",
   email: "abc@xyz.com",
   linkedin: "",
   instagram: "",

@@ -4,6 +4,7 @@ import { BlogItem, blogs } from "./Blogs";
 import WebsiteHeader from "../components/website/WebsiteHeader";
 import WebsiteFooter from "../components/website/WebsiteFooter";
 import SubHeading from "../components/SubHeading";
+import SEO from "../components/SEO";
 // import { blogs } from "../../data/blogs";
 const PageBanner = React.lazy(() => import("../components/website/PageBanner"));
 
@@ -14,8 +15,36 @@ const BlogDetails = () => {
     return <Navigate to="/blogs" />;
   }
   const latestBlogs = blogs.filter((item) => item.id !== Number(id)) || [];
+  
+  // Dynamic SEO for blog details
+  const blogSeoData = {
+    title: `Blog Post ${id} | Technology Insights | Quantum Code Solutions`,
+    description: `Read our latest technology insights and software development tips. Stay updated with industry trends and best practices from Quantum Code Solutions.`,
+    keywords: `technology blog, software development, programming insights, tech trends, quantum code solutions blog`,
+    canonicalUrl: `https://quantumcodesolutions.com/blogs/${id}`,
+    ogImage: blog.image,
+    structuredData: {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": `Blog Post ${id}`,
+      "image": blog.image,
+      "author": {
+        "@type": "Organization",
+        "name": "Quantum Code Solutions"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Quantum Code Solutions",
+        "logo": "https://quantumcodesolutions.com/logo.png"
+      },
+      "datePublished": new Date().toISOString(),
+      "dateModified": new Date().toISOString()
+    }
+  };
+  
   return (
     <>
+      <SEO {...blogSeoData} />
       <WebsiteHeader />
       <PageBanner title="Blog Details" />
       <div className="bg-primary/5 relative text-primary_text">

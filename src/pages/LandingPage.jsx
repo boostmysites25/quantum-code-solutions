@@ -7,6 +7,8 @@ import appDevAboutImg from "../assets/images/services/app-dev.webp";
 import webDevAboutImg from "../assets/images/services/web-dev.webp";
 import ReactPlayer from "react-player";
 import LeadForm from "../components/LeadForm";
+import SEO from "../components/SEO";
+import { landingPageSeoData } from "../seoData";
 
 const LandingHeader = lazy(() =>
   import("../components/landingPages/LandingHeader")
@@ -34,8 +36,17 @@ const LandingPage = ({ page }) => {
     services = appDevelopmentServices;
   }
 
+  // Get SEO data for this landing page
+  const seoData = landingPageSeoData[page] || {
+    title: `${page.replace('-', ' ')} Services | Quantum Code Solutions`,
+    description: `Professional ${page.replace('-', ' ')} services from Quantum Code Solutions`,
+    keywords: `${page.replace('-', ' ')}, software development, quantum code solutions`,
+    canonicalUrl: `https://quantumcodesolutions.com/${page}`
+  };
+
   return (
     <>
+      <SEO {...seoData} />
       <LandingHeader />
       <section
         id="banner"

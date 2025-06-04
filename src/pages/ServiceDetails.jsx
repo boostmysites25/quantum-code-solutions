@@ -2,6 +2,8 @@ import React from "react";
 import { useParams, Link } from "react-router-dom";
 import { allServices } from "../constant";
 import SubHeading from "../components/SubHeading";
+import SEO from "../components/SEO";
+import { servicesSeoData } from "../seoData";
 
 const WebsiteHeader = React.lazy(() =>
   import("../components/website/WebsiteHeader")
@@ -44,8 +46,17 @@ const ServiceDetails = () => {
 
   const ServiceIcon = service.icon;
 
+  // Get SEO data for this service
+  const seoData = servicesSeoData[slug] || {
+    title: `${service.title} | Quantum Code Solutions`,
+    description: service.description,
+    keywords: `${service.title.toLowerCase()}, software development, quantum code solutions`,
+    canonicalUrl: `https://quantumcodesolutions.com/services/${slug}`
+  };
+
   return (
     <>
+      <SEO {...seoData} />
       <WebsiteHeader />
       <PageBanner title={service.title} desc={service.description} />
 

@@ -8,6 +8,8 @@ import { ReactComponent as Icon2 } from "../assets/svgs/services/App Development
 import { ReactComponent as Icon3 } from "../assets/svgs/services/Machine Learning Solutions.svg";
 import WorkProcess from "../components/WorkProcess";
 import ReactPlayer from "react-player";
+import SEO from "../components/SEO";
+import { seoData } from "../seoData";
 
 const WebsiteHeader = React.lazy(() =>
   import("../components/website/WebsiteHeader")
@@ -33,6 +35,7 @@ const LeadForm = React.lazy(() => import("../components/LeadForm"));
 const Home = () => {
   return (
     <>
+      <SEO {...seoData.home} />
       <WebsiteHeader />
       <section className="h-screen banner relative text-primary_text">
         <div className="absolute top-0 w-full h-full bg-gradient-to-b from-background via-background/50 to-background">

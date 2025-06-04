@@ -3,6 +3,8 @@ import WebsiteHeader from "../components/website/WebsiteHeader";
 import PageBanner from "../components/website/PageBanner";
 import SubHeading from "../components/SubHeading";
 import aboutImg1 from "../assets/images/about-img1.webp";
+import SEO from "../components/SEO";
+import { seoData } from "../seoData";
 const TrustWorthySection = React.lazy(() =>
   import("../components/TrustWorthySection")
 );
@@ -19,6 +21,7 @@ const LeadForm = React.lazy(() => import("../components/LeadForm"));
 const AboutUs = () => {
   return (
     <>
+      <SEO {...seoData.about} />
       <WebsiteHeader />
       <PageBanner title="About Us" />
       <section className="text-primary_text wrapper py-[3rem]">

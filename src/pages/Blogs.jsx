@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 import WebsiteHeader from "../components/website/WebsiteHeader";
 import WebsiteFooter from "../components/website/WebsiteFooter";
 import SubHeading from "../components/SubHeading";
+import SEO from "../components/SEO";
+import { seoData } from "../seoData";
 // import { blogs } from "../../data/blogs";
 const PageBanner = React.lazy(() => import("../components/website/PageBanner"));
 
@@ -31,6 +33,7 @@ export const blogs = [
 const Blogs = () => {
   return ( 
     <>
+      <SEO {...seoData.blogs} />
       <WebsiteHeader />
       <PageBanner title="Blogs" />
       <div className="bg-secondary/5 relative text-primary_text">

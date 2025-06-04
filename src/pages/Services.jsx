@@ -1,4 +1,6 @@
 import React from "react";
+import SEO from "../components/SEO";
+import { seoData } from "../seoData";
 const WebsiteHeader = React.lazy(() => import("../components/website/WebsiteHeader"));
 const PageBanner = React.lazy(() => import("../components/website/PageBanner"));
 const AllServices = React.lazy(() => import("../components/website/AllServices"));
@@ -11,6 +13,7 @@ const WebsiteFooter = React.lazy(() => import("../components/website/WebsiteFoot
 const Services = () => {
   return (
     <>
+      <SEO {...seoData.services} />
       <WebsiteHeader />
       <PageBanner
         title="Our Services"
