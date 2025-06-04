@@ -173,7 +173,7 @@ const ServiceDetails = () => {
         </div>
 
         <div className="wrapper py-[4rem] md:py-[6rem] relative z-10">
-          <div className="max-w-7xl mx-auto px-4">
+          <div className="max-w-7xl mx-auto px-2">
             {/* Content Header */}
             <div className="text-center mb-12" data-aos="fade-up">
               <div className="inline-flex items-center gap-3 bg-gradient-to-r from-secondary/10 to-primary/10 px-6 py-3 rounded-full border border-secondary/20 mb-6">
