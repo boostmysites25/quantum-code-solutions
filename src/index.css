@@ -88,7 +88,7 @@ html {
   
   .service-detail-content h2::after {
     content: "";
-    @apply absolute bottom-0 left-0 w-20 h-1 bg-gradient-to-r from-secondary to-primary rounded-full;
+    /* @apply absolute bottom-0 left-0 w-20 h-1 bg-gradient-to-r from-secondary to-primary rounded-full; */
   }
   
   .service-detail-content h3 {
@@ -147,6 +147,72 @@ html {
 }
 .EZDrawer .EZDrawer__container::-webkit-scrollbar {
   display: none;
+}
+
+/* Futuristic animations and effects */
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes glow {
+  0%, 100% { box-shadow: 0 0 20px rgba(23, 153, 172, 0.3); }
+  50% { box-shadow: 0 0 30px rgba(23, 153, 172, 0.6), 0 0 40px rgba(23, 153, 172, 0.4); }
+}
+
+@keyframes shimmer {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+
+@keyframes pulse-glow {
+  0%, 100% { 
+    box-shadow: 0 0 20px rgba(23, 153, 172, 0.4);
+    transform: scale(1);
+  }
+  50% { 
+    box-shadow: 0 0 40px rgba(23, 153, 172, 0.8);
+    transform: scale(1.05);
+  }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+.animate-glow {
+  animation: glow 2s ease-in-out infinite;
+}
+
+.animate-shimmer {
+  animation: shimmer 2s infinite;
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 3s ease-in-out infinite;
+}
+
+/* Glassmorphism effect */
+.glass-effect {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Gradient text animation */
+@keyframes gradient-shift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.animate-gradient {
+  background: linear-gradient(-45deg, #000F05, #1799AC, #000F05, #1799AC);
+  background-size: 400% 400%;
+  animation: gradient-shift 3s ease infinite;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 /* loading spinner styles */
