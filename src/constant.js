@@ -804,6 +804,91 @@ export const allServices = [
     `,
   },
   {
+    id: 12,
+    title: "AI Development",
+    slug: "ai-development",
+    link: "/ai-development",
+    image: require("./assets/images/services/ai.webp"),
+    description:
+      "Harness the power of artificial intelligence to transform your business with custom AI solutions tailored to your specific needs.",
+    icon: allServiceIcon2,
+    detailHeading: "AI Development: Building Intelligent Solutions",
+    detailContent: `
+      <div class="service-detail-content">
+        <h2>Custom AI Development Services for Business Innovation</h2>
+        <p>Artificial Intelligence is revolutionizing how businesses operate, make decisions, and engage with customers. At Quantum Code Solutions, we develop custom AI solutions that help organizations automate processes, gain valuable insights, and create innovative products and services that drive competitive advantage.</p>
+        
+        <h3>Our AI Development Services</h3>
+        
+        <h4>1. Machine Learning Solutions</h4>
+        <p>Develop intelligent systems that learn from data and improve over time:</p>
+        <ul>
+          <li>Supervised learning models for classification and prediction</li>
+          <li>Unsupervised learning for pattern recognition and clustering</li>
+          <li>Reinforcement learning for decision-making systems</li>
+          <li>Deep learning with neural networks</li>
+          <li>Transfer learning for efficient model development</li>
+          <li>Anomaly detection systems</li>
+          <li>Recommendation engines and personalization systems</li>
+        </ul>
+        
+        <h4>2. Natural Language Processing</h4>
+        <p>Build systems that understand, interpret, and generate human language:</p>
+        <ul>
+          <li>Text classification and sentiment analysis</li>
+          <li>Named entity recognition and information extraction</li>
+          <li>Language translation and localization</li>
+          <li>Chatbot and conversational AI development</li>
+          <li>Text summarization and content generation</li>
+          <li>Speech recognition and voice assistants</li>
+          <li>Document analysis and processing</li>
+        </ul>
+        
+        <h4>3. Computer Vision Solutions</h4>
+        <p>Develop systems that can interpret and understand visual information:</p>
+        <ul>
+          <li>Image classification and object detection</li>
+          <li>Facial recognition and emotion analysis</li>
+          <li>Video analytics and surveillance systems</li>
+          <li>Optical character recognition (OCR)</li>
+          <li>Augmented reality applications</li>
+          <li>Medical image analysis</li>
+          <li>Visual quality control for manufacturing</li>
+        </ul>
+        
+        <h4>4. Predictive Analytics</h4>
+        <p>Leverage data to forecast trends and make proactive business decisions:</p>
+        <ul>
+          <li>Demand forecasting and inventory optimization</li>
+          <li>Customer churn prediction and prevention</li>
+          <li>Predictive maintenance for equipment and systems</li>
+          <li>Risk assessment and fraud detection</li>
+          <li>Sales forecasting and market analysis</li>
+          <li>Resource allocation optimization</li>
+          <li>Financial modeling and prediction</li>
+        </ul>
+        
+        <h4>5. AI Integration Services</h4>
+        <p>Seamlessly integrate AI capabilities into existing systems and workflows:</p>
+        <ul>
+          <li>API development for AI model deployment</li>
+          <li>Integration with enterprise systems (CRM, ERP, etc.)</li>
+          <li>Cloud-based AI solutions (AWS, Azure, Google Cloud)</li>
+          <li>Edge AI implementation for IoT devices</li>
+          <li>AI-powered automation of business processes</li>
+          <li>Data pipeline development for AI systems</li>
+          <li>Performance optimization and scaling</li>
+        </ul>
+        
+        <h3>Our AI Development Process</h3>
+        <p>We follow a comprehensive approach to AI development that includes problem definition, data collection and preparation, model selection and development, training and validation, deployment, monitoring, and continuous improvement. Our iterative process ensures that AI solutions deliver measurable business value and adapt to changing requirements.</p>
+        
+        <h3>Industries We Serve</h3>
+        <p>Our AI development expertise spans across multiple industries including healthcare, finance, retail, manufacturing, logistics, education, and entertainment. We understand the unique challenges and opportunities in each sector and develop tailored AI solutions that address specific business needs.</p>
+      </div>
+    `,
+  },
+  {
     id: 7,
     title: "Cloud Computing Services",
     slug: "cloud-computing",
@@ -900,7 +985,7 @@ export const allServices = [
       </div>
     `,
   },
-  
+
   {
     id: 8,
     title: "Cloud Migration Services",
@@ -1289,7 +1374,6 @@ export const allServices = [
       </div>
     `,
   },
-  
 ];
 
 // portfolio images (web development)

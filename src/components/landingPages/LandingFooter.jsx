@@ -31,6 +31,7 @@ const LandingFooter = () => {
             <Link
               aria-label="Contact us on Instagram"
               to={companyDetails.instagram}
+              target="_blank"
               className="w-[2rem] h-[2rem] rounded-full p-2 bg-secondary hover:bg-primary text-primary_text hover:text-white hover:-translate-y-1 transition-all duration-300 flex justify-center items-center"
             >
               <Instagram strokeWidth={1.5} size={20} />
@@ -38,6 +39,7 @@ const LandingFooter = () => {
             <Link
               aria-label="Contact us on LinkedIn"
               to={companyDetails.linkedin}
+              target="_blank"
               className="w-[2rem] h-[2rem] rounded-full p-2 bg-secondary hover:bg-primary text-primary_text hover:text-white hover:-translate-y-1 transition-all duration-300 flex justify-center items-center"
             >
               <Linkedin strokeWidth={1.5} size={20} />
@@ -45,6 +47,7 @@ const LandingFooter = () => {
             <Link
               aria-label="Contact us on Facebook"
               to={companyDetails.facebook}
+              target="_blank"
               className="w-[2rem] h-[2rem] rounded-full p-2 bg-secondary hover:bg-primary text-primary_text hover:text-white hover:-translate-y-1 transition-all duration-300 flex justify-center items-center"
             >
               <Facebook strokeWidth={1.5} size={20} />
