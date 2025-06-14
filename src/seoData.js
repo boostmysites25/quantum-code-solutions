@@ -24,9 +24,9 @@ export const seoData = {
       },
       contactPoint: {
         "@type": "ContactPoint",
-        telephone: "+1-234-567-8900",
+        telephone: "+919998038952",
         contactType: "customer service",
-        email: "info@quantumcodesolutions.com",
+        email: "sale@quantumcodesolutions.com",
       },
       sameAs: [
         "https://www.facebook.com/quantumcodesolutions",
@@ -134,9 +134,9 @@ export const seoData = {
         name: "Quantum Code Solutions",
         contactPoint: {
           "@type": "ContactPoint",
-          telephone: "+1-234-567-8900",
+          telephone: "+919998038952",
           contactType: "customer service",
-          email: "info@quantumcodesolutions.com",
+          email: "sale@quantumcodesolutions.com",
           availableLanguage: "English",
         },
       },
