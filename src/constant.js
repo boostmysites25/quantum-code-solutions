@@ -39,9 +39,9 @@ export const companyDetails = {
   phone: "+919998038952",
   address: "B-70 Gopalnagar Society, Nr president college,  Kalol - 382721",
   email: "sale@quantumcodesolutions.com",
-  linkedin: "",
-  instagram: "",
-  twitter: "",
+  linkedin: "https://www.linkedin.com/company/quantumcodesolutions/",
+  instagram: "https://www.instagram.com/quantum.code.solutions/",
+  facebook: "https://www.facebook.com/quantumcodesolutions",
 };
 
 export const routes = [
@@ -382,20 +382,20 @@ export const allServices = [
   },
   {
     id: 3,
-    title: "AI & Machine Learning",
-    slug: "ai-machine-learning",
-    image: require("./assets/images/services/ai.webp"),
+    title: "Machine Learning",
+    slug: "machine-learning",
+    image: require("./assets/images/services/ml.jpg"),
     description:
-      "Artificial Intelligence and Machine Learning are revolutionizing industries across the globe.",
+      "Machine Learning is revolutionizing industries across the globe with data-driven insights and automation.",
     icon: allServiceIcon2,
     detailHeading:
-      "AI & Machine Learning: Harnessing the Power of Intelligence",
+      "Machine Learning: Harnessing the Power of Data Intelligence",
     detailContent: `
       <div class="service-detail-content">
-        <h2>Transform Your Business with Artificial Intelligence and Machine Learning</h2>
-        <p>Artificial Intelligence and Machine Learning are no longer futuristic concepts—they're powerful tools that are revolutionizing industries and transforming how businesses operate today. At Quantum Code Solutions, we harness the power of AI and ML to help organizations automate processes, gain valuable insights from data, and create intelligent solutions that drive growth and innovation.</p>
+        <h2>Transform Your Business with Machine Learning</h2>
+        <p>Machine Learning is no longer a futuristic concept—it's a powerful tool that is revolutionizing industries and transforming how businesses operate today. At Quantum Code Solutions, we harness the power of ML to help organizations automate processes, gain valuable insights from data, and create intelligent solutions that drive growth and innovation.</p>
         
-        <h3>Our AI & Machine Learning Services</h3>
+        <h3>Our Machine Learning Services</h3>
         
         <h4>1. Predictive Analytics</h4>
         <p>Leverage historical data to predict future trends and make informed business decisions:</p>
@@ -410,27 +410,27 @@ export const allServices = [
         </ul>
         
         <h4>2. Natural Language Processing (NLP)</h4>
-        <p>Enable machines to understand, interpret, and generate human language:</p>
+        <p>Enable systems to understand, interpret, and generate human language:</p>
         <ul>
           <li>Sentiment analysis for social media and customer feedback</li>
           <li>Text classification and document categorization</li>
           <li>Language translation services</li>
           <li>Content generation and summarization</li>
           <li>Voice recognition and speech-to-text conversion</li>
-          <li>Chatbot development with natural conversation capabilities</li>
           <li>Information extraction from unstructured data</li>
+          <li>Topic modeling and text clustering</li>
         </ul>
         
         <h4>3. Computer Vision</h4>
         <p>Extract meaningful information from visual data to automate image and video analysis:</p>
         <ul>
           <li>Object detection and recognition</li>
-          <li>Facial recognition and biometric authentication</li>
+          <li>Image classification and segmentation</li>
           <li>Quality control and defect detection in manufacturing</li>
-          <li>Medical image analysis and diagnosis assistance</li>
-          <li>Autonomous vehicle vision systems</li>
-          <li>Augmented reality applications</li>
-          <li>Security and surveillance systems</li>
+          <li>Medical image analysis</li>
+          <li>Visual search capabilities</li>
+          <li>Optical character recognition (OCR)</li>
+          <li>Video analytics and motion detection</li>
         </ul>
         
         <h4>4. Recommendation Systems</h4>
@@ -445,16 +445,16 @@ export const allServices = [
           <li>Social network friend and connection suggestions</li>
         </ul>
         
-        <h4>5. Process Automation</h4>
-        <p>Streamline operations and reduce manual work with intelligent automation:</p>
+        <h4>5. Anomaly Detection</h4>
+        <p>Identify unusual patterns that do not conform to expected behavior:</p>
         <ul>
-          <li>Robotic Process Automation (RPA) with AI capabilities</li>
-          <li>Document processing and data extraction</li>
-          <li>Workflow optimization and task automation</li>
-          <li>Customer service automation</li>
-          <li>Supply chain optimization</li>
-          <li>Financial transaction processing</li>
-          <li>HR processes automation</li>
+          <li>Fraud detection in financial transactions</li>
+          <li>Network security and intrusion detection</li>
+          <li>Manufacturing quality control</li>
+          <li>System health monitoring</li>
+          <li>Outlier detection in data analysis</li>
+          <li>Predictive maintenance for equipment</li>
+          <li>User behavior analysis for security</li>
         </ul>
         
         <h4>6. Deep Learning Solutions</h4>
@@ -469,23 +469,23 @@ export const allServices = [
           <li>Model optimization and deployment</li>
         </ul>
         
-        <h4>7. AI Strategy and Consulting</h4>
-        <p>Develop comprehensive AI strategies aligned with your business objectives:</p>
+        <h4>7. ML Strategy and Consulting</h4>
+        <p>Develop comprehensive Machine Learning strategies aligned with your business objectives:</p>
         <ul>
-          <li>AI readiness assessment and roadmap development</li>
+          <li>ML readiness assessment and roadmap development</li>
           <li>Data strategy and infrastructure planning</li>
           <li>Technology stack selection and architecture design</li>
           <li>ROI analysis and business case development</li>
           <li>Team training and capability building</li>
-          <li>Ethical AI implementation and governance</li>
+          <li>Ethical ML implementation and governance</li>
           <li>Compliance and regulatory guidance</li>
         </ul>
         
-        <h3>Our AI Development Process</h3>
-        <p>We follow a systematic approach to AI development that ensures successful implementation and measurable results. Our process includes problem definition, data collection and preparation, model development and training, validation and testing, deployment, and continuous monitoring and improvement.</p>
+        <h3>Our Machine Learning Development Process</h3>
+        <p>We follow a systematic approach to ML development that ensures successful implementation and measurable results. Our process includes problem definition, data collection and preparation, model development and training, validation and testing, deployment, and continuous monitoring and improvement.</p>
         
         <h3>Industries We Serve</h3>
-        <p>Our AI and ML solutions have been successfully implemented across various industries including healthcare, finance, retail, manufacturing, education, and technology. We understand the unique challenges and requirements of different sectors and tailor our solutions accordingly.</p>
+        <p>Our Machine Learning solutions have been successfully implemented across various industries including healthcare, finance, retail, manufacturing, education, and technology. We understand the unique challenges and requirements of different sectors and tailor our solutions accordingly.</p>
       </div>
     `,
   },
@@ -804,6 +804,91 @@ export const allServices = [
     `,
   },
   {
+    id: 12,
+    title: "AI Development",
+    slug: "ai-development",
+    link: "/ai-development",
+    image: require("./assets/images/services/ai.webp"),
+    description:
+      "Harness the power of artificial intelligence to transform your business with custom AI solutions tailored to your specific needs.",
+    icon: allServiceIcon2,
+    detailHeading: "AI Development: Building Intelligent Solutions",
+    detailContent: `
+      <div class="service-detail-content">
+        <h2>Custom AI Development Services for Business Innovation</h2>
+        <p>Artificial Intelligence is revolutionizing how businesses operate, make decisions, and engage with customers. At Quantum Code Solutions, we develop custom AI solutions that help organizations automate processes, gain valuable insights, and create innovative products and services that drive competitive advantage.</p>
+        
+        <h3>Our AI Development Services</h3>
+        
+        <h4>1. Machine Learning Solutions</h4>
+        <p>Develop intelligent systems that learn from data and improve over time:</p>
+        <ul>
+          <li>Supervised learning models for classification and prediction</li>
+          <li>Unsupervised learning for pattern recognition and clustering</li>
+          <li>Reinforcement learning for decision-making systems</li>
+          <li>Deep learning with neural networks</li>
+          <li>Transfer learning for efficient model development</li>
+          <li>Anomaly detection systems</li>
+          <li>Recommendation engines and personalization systems</li>
+        </ul>
+        
+        <h4>2. Natural Language Processing</h4>
+        <p>Build systems that understand, interpret, and generate human language:</p>
+        <ul>
+          <li>Text classification and sentiment analysis</li>
+          <li>Named entity recognition and information extraction</li>
+          <li>Language translation and localization</li>
+          <li>Chatbot and conversational AI development</li>
+          <li>Text summarization and content generation</li>
+          <li>Speech recognition and voice assistants</li>
+          <li>Document analysis and processing</li>
+        </ul>
+        
+        <h4>3. Computer Vision Solutions</h4>
+        <p>Develop systems that can interpret and understand visual information:</p>
+        <ul>
+          <li>Image classification and object detection</li>
+          <li>Facial recognition and emotion analysis</li>
+          <li>Video analytics and surveillance systems</li>
+          <li>Optical character recognition (OCR)</li>
+          <li>Augmented reality applications</li>
+          <li>Medical image analysis</li>
+          <li>Visual quality control for manufacturing</li>
+        </ul>
+        
+        <h4>4. Predictive Analytics</h4>
+        <p>Leverage data to forecast trends and make proactive business decisions:</p>
+        <ul>
+          <li>Demand forecasting and inventory optimization</li>
+          <li>Customer churn prediction and prevention</li>
+          <li>Predictive maintenance for equipment and systems</li>
+          <li>Risk assessment and fraud detection</li>
+          <li>Sales forecasting and market analysis</li>
+          <li>Resource allocation optimization</li>
+          <li>Financial modeling and prediction</li>
+        </ul>
+        
+        <h4>5. AI Integration Services</h4>
+        <p>Seamlessly integrate AI capabilities into existing systems and workflows:</p>
+        <ul>
+          <li>API development for AI model deployment</li>
+          <li>Integration with enterprise systems (CRM, ERP, etc.)</li>
+          <li>Cloud-based AI solutions (AWS, Azure, Google Cloud)</li>
+          <li>Edge AI implementation for IoT devices</li>
+          <li>AI-powered automation of business processes</li>
+          <li>Data pipeline development for AI systems</li>
+          <li>Performance optimization and scaling</li>
+        </ul>
+        
+        <h3>Our AI Development Process</h3>
+        <p>We follow a comprehensive approach to AI development that includes problem definition, data collection and preparation, model selection and development, training and validation, deployment, monitoring, and continuous improvement. Our iterative process ensures that AI solutions deliver measurable business value and adapt to changing requirements.</p>
+        
+        <h3>Industries We Serve</h3>
+        <p>Our AI development expertise spans across multiple industries including healthcare, finance, retail, manufacturing, logistics, education, and entertainment. We understand the unique challenges and opportunities in each sector and develop tailored AI solutions that address specific business needs.</p>
+      </div>
+    `,
+  },
+  {
     id: 7,
     title: "Cloud Computing Services",
     slug: "cloud-computing",
@@ -900,6 +985,7 @@ export const allServices = [
       </div>
     `,
   },
+
   {
     id: 8,
     title: "Cloud Migration Services",
@@ -1200,6 +1286,91 @@ export const allServices = [
         
         <h3>Benefits of RPA Implementation</h3>
         <p>RPA implementation delivers significant benefits including cost reduction, improved accuracy, faster processing times, enhanced compliance, better customer experience, and increased employee satisfaction by eliminating mundane tasks and enabling focus on strategic work.</p>
+      </div>
+    `,
+  },
+  {
+    id: 11,
+    title: "AI Calling Agency",
+    slug: "ai-calling-agency",
+    link: "/ai-calling-agency",
+    image: require("./assets/images/services/ai-calling-agency.webp"),
+    description:
+      "Transform your customer outreach with our AI-powered calling solutions that deliver personalized interactions at scale.",
+    icon: allServiceIcon2,
+    detailHeading: "AI Calling Agency: Revolutionizing Customer Communication",
+    detailContent: `
+      <div class="service-detail-content">
+        <h2>AI-Powered Calling Solutions for Modern Businesses</h2>
+        <p>In today's fast-paced business environment, effective customer communication is essential for growth and retention. Our AI Calling Agency leverages cutting-edge artificial intelligence to transform how businesses connect with customers, prospects, and partners through voice interactions.</p>
+        
+        <h3>Our AI Calling Services</h3>
+        
+        <h4>1. Intelligent Virtual Calling Assistants</h4>
+        <p>Deploy AI-powered virtual agents that handle outbound calls with natural-sounding voices and human-like conversation abilities:</p>
+        <ul>
+          <li>Natural language processing for dynamic conversations</li>
+          <li>Voice cloning and customization options</li>
+          <li>Sentiment analysis for adaptive responses</li>
+          <li>Multi-language support for global operations</li>
+          <li>Real-time script adaptation based on customer responses</li>
+          <li>Seamless handoff to human agents when needed</li>
+          <li>Call recording and quality monitoring</li>
+        </ul>
+        
+        <h4>2. Automated Appointment Scheduling</h4>
+        <p>Streamline your scheduling process with AI-powered calling solutions:</p>
+        <ul>
+          <li>Automated appointment booking and confirmation calls</li>
+          <li>Rescheduling and cancellation management</li>
+          <li>Calendar integration with popular scheduling platforms</li>
+          <li>Reminder calls and follow-ups</li>
+          <li>Custom scheduling rules and availability management</li>
+          <li>Multi-location and multi-provider support</li>
+          <li>Customer preference tracking</li>
+        </ul>
+        
+        <h4>3. Lead Qualification and Nurturing</h4>
+        <p>Qualify and nurture leads at scale with intelligent calling solutions:</p>
+        <ul>
+          <li>Automated lead qualification based on predefined criteria</li>
+          <li>Personalized follow-up calls based on customer behavior</li>
+          <li>CRM integration for seamless data flow</li>
+          <li>Lead scoring and prioritization</li>
+          <li>Customized call scripts for different customer segments</li>
+          <li>A/B testing of different approaches</li>
+          <li>Performance analytics and optimization</li>
+        </ul>
+        
+        <h4>4. Customer Feedback and Surveys</h4>
+        <p>Gather valuable customer insights through AI-powered calling campaigns:</p>
+        <ul>
+          <li>Automated survey calls with natural conversation flow</li>
+          <li>Real-time response recording and analysis</li>
+          <li>Sentiment detection and emotional intelligence</li>
+          <li>Customizable survey templates and questions</li>
+          <li>Integration with feedback management systems</li>
+          <li>Trend analysis and reporting</li>
+          <li>Closed-loop feedback implementation</li>
+        </ul>
+        
+        <h4>5. Sales and Telemarketing Automation</h4>
+        <p>Enhance your sales operations with intelligent calling solutions:</p>
+        <ul>
+          <li>AI-powered sales calls with natural conversation abilities</li>
+          <li>Product recommendation based on customer profile</li>
+          <li>Objection handling and persuasive communication</li>
+          <li>Cross-selling and upselling capabilities</li>
+          <li>Integration with e-commerce and payment systems</li>
+          <li>Performance tracking and sales analytics</li>
+          <li>Compliance management for telemarketing regulations</li>
+        </ul>
+        
+        <h3>Why Choose Our AI Calling Agency</h3>
+        <p>Our AI calling solutions offer numerous advantages over traditional call centers, including cost efficiency, scalability, consistency, 24/7 availability, multilingual capabilities, and detailed analytics. We help businesses transform their customer communication while maintaining the personal touch that builds lasting relationships.</p>
+        
+        <h3>Implementation Process</h3>
+        <p>We follow a structured approach to implementing AI calling solutions, starting with needs assessment and strategy development, followed by script creation, voice selection, integration with existing systems, testing and optimization, deployment, and ongoing support and improvement.</p>
       </div>
     `,
   },
