@@ -9,9 +9,13 @@
   font-family: "Poppins", serif;
 }
 
+.reset-html-content * {
+  all: revert;
+}
+
 html {
   scroll-behavior: smooth;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   /* color: #111111; */
   color: #111111;
   margin: 0;
@@ -76,59 +80,59 @@ html {
   .section-heading {
     @apply font-medium text-lg;
   }
-  
+
   /* Service Detail Content Styling */
   .service-detail-content {
     @apply leading-relaxed;
   }
-  
+
   .service-detail-content h2 {
     @apply text-2xl sm:text-3xl lg:text-5xl font-bold mb-6 lg:mb-8 text-transparent bg-gradient-to-r from-primary via-secondary to-primary bg-clip-text border-b-2 lg:border-b-4 border-secondary pb-3 relative;
   }
-  
+
   .service-detail-content h2::after {
     content: "";
     /* @apply absolute bottom-0 left-0 w-20 h-1 bg-gradient-to-r from-secondary to-primary rounded-full; */
   }
-  
+
   .service-detail-content h3 {
     @apply text-xl sm:text-2xl lg:text-3xl font-semibold mt-8 lg:mt-12 mb-4 lg:mb-6 text-transparent bg-gradient-to-r from-primary to-secondary bg-clip-text relative;
   }
-  
+
   .service-detail-content h3::before {
     content: "";
     @apply absolute -left-4 top-1/2 transform -translate-y-1/2 w-2 h-8 bg-gradient-to-b from-secondary to-primary rounded-full;
   }
-  
+
   .service-detail-content h4 {
     @apply text-lg sm:text-xl lg:text-2xl font-semibold mt-6 lg:mt-8 mb-4 lg:mb-5 text-secondary relative pl-6;
   }
-  
+
   .service-detail-content h4::before {
     content: "▶";
     @apply absolute left-0 top-0 text-secondary text-sm;
   }
-  
+
   .service-detail-content p {
     @apply text-primary_text text-base lg:text-lg mb-5 lg:mb-7 font-light leading-relaxed;
   }
-  
+
   .service-detail-content ul {
     @apply my-5 lg:my-7 pl-0 bg-secondary/5 rounded-xl p-4 lg:p-6;
   }
-  
+
   .service-detail-content li {
     @apply text-primary_text text-sm lg:text-base mb-3 lg:mb-4 pl-6 lg:pl-8 relative list-none font-light leading-relaxed transition-all duration-200 hover:text-secondary hover:pl-8 lg:hover:pl-10;
   }
-  
+
   .service-detail-content li::before {
     content: "✓";
-    @apply absolute left-0 text-secondary font-bold text-base lg:text-lg bg-secondary/10 w-5 h-5 lg:w-6 lg:h-6 rounded-full flex items-center justify-center ;
+    @apply absolute left-0 text-secondary font-bold text-base lg:text-lg bg-secondary/10 w-5 h-5 lg:w-6 lg:h-6 rounded-full flex items-center justify-center;
   }
 }
 
 /* banner video */
-.banner video{
+.banner video {
   object-fit: contain;
   position: absolute;
   height: 100%;
@@ -151,26 +155,42 @@ html {
 
 /* Futuristic animations and effects */
 @keyframes float {
-  0%, 100% { transform: translateY(0px); }
-  50% { transform: translateY(-10px); }
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
 }
 
 @keyframes glow {
-  0%, 100% { box-shadow: 0 0 20px rgba(23, 153, 172, 0.3); }
-  50% { box-shadow: 0 0 30px rgba(23, 153, 172, 0.6), 0 0 40px rgba(23, 153, 172, 0.4); }
+  0%,
+  100% {
+    box-shadow: 0 0 20px rgba(23, 153, 172, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 30px rgba(23, 153, 172, 0.6),
+      0 0 40px rgba(23, 153, 172, 0.4);
+  }
 }
 
 @keyframes shimmer {
-  0% { transform: translateX(-100%); }
-  100% { transform: translateX(100%); }
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
 }
 
 @keyframes pulse-glow {
-  0%, 100% { 
+  0%,
+  100% {
     box-shadow: 0 0 20px rgba(23, 153, 172, 0.4);
     transform: scale(1);
   }
-  50% { 
+  50% {
     box-shadow: 0 0 40px rgba(23, 153, 172, 0.8);
     transform: scale(1.05);
   }
@@ -201,13 +221,19 @@ html {
 
 /* Gradient text animation */
 @keyframes gradient-shift {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 .animate-gradient {
-  background: linear-gradient(-45deg, #000F05, #1799AC, #000F05, #1799AC);
+  background: linear-gradient(-45deg, #000f05, #1799ac, #000f05, #1799ac);
   background-size: 400% 400%;
   animation: gradient-shift 3s ease infinite;
   -webkit-background-clip: text;
@@ -250,7 +276,7 @@ html {
   bottom: 0;
   margin: auto;
   border: 3px solid;
-  border-color: transparent #FF6600 #FF6600;
+  border-color: transparent #ff6600 #ff6600;
   width: 24px;
   height: 24px;
   border-radius: 50%;
