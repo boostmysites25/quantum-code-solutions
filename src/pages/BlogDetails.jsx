@@ -98,7 +98,7 @@ const BlogDetails = () => {
     <>
       <SEO {...blogSeoData} />
       <WebsiteHeader />
-      <PageBanner title={blogData?.title || "Blog Details"} />
+      <PageBanner title={"Blog Details"} />
 
       <div className="bg-primary/5 relative text-primary_text">
         <div className="wrapper py-[5rem] relative z-10">
