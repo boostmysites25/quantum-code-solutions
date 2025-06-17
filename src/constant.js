@@ -36,7 +36,7 @@ const ServiceDetails = lazy(() => import("./pages/ServiceDetails"));
 export { logoImg };
 
 export const companyDetails = {
-  phone: "+919998038952",
+  phone: "+917016569094",
   address: "B-70 Gopalnagar Society, Nr president college,  Kalol - 382721",
   email: "sale@quantumcodesolutions.com",
   linkedin: "https://www.linkedin.com/company/quantumcodesolutions/",
