@@ -37,7 +37,7 @@ export { logoImg };
 
 export const companyDetails = {
   phone: "+917016569094",
-  address: "B-70 Gopalnagar Society, Nr president college,  Kalol - 382721",
+  address: "Ahmedabad , Gujarat",
   email: "sale@quantumcodesolutions.com",
   linkedin: "https://www.linkedin.com/company/quantumcodesolutions/",
   instagram: "https://www.instagram.com/quantum.code.solutions/",
